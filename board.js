@@ -1,12 +1,9 @@
 function Board() {
-    // this.board = [
-    //     ['-','-','-'],
-    //     ['-','-','-'],
-    //     ['-','-','-']
-    // ]
-    this.board = [['3','6','X'],
-                    ['2','X','8'],
-                    ['X','4','7']]
+    this.board = [
+        ['-','-','-'],
+        ['-','-','-'],
+        ['-','-','-']
+    ]
     this.min = 0
     this.max = 2
 }
@@ -60,7 +57,7 @@ Board.prototype.checkDai = function (type) {
     var bs = 0
     var sCount = 0
     var bsCount = 0
-    
+
     for(var x = 0; x <= 2; x++) {
         for(var y = 0; y <= 2; y++) {}
         console.log(this.board[x][s])

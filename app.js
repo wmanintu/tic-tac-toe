@@ -19,7 +19,6 @@ process.stdin.on('data', (input) => {
     board.setBoard(location[0], location[1], currentPlayer.type) // END TURN
 
     // CHECK FOR WINNER
-    // var result = board.checkHorizontal(currentPlayer.type)
     var result = board.checkDai(currentPlayer.type)
     if (result === true) {
         // WIN : CLEAR Board
